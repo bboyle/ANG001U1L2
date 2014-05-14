@@ -29,13 +29,23 @@ button {
 	height: 1em;
 	background: #ccc;
 }
-button:focus, button:hover {
+button:focus,
+button:hover,
+#result.plus {
 	background: #7fc;
 }
+button:nth-of-type(2):focus,
+button:nth-of-type(2):hover,
+#result.minus {
+	background: #f7c;
+} 
 
 #result {
-	margin: 2em 0;
-	transition: opacity .5s;
+	margin: 2em;
+	background: #7fc;
+	padding: 1em;
+	border-radius: .3em;
+	transition: background .2s, opacity .2s;
 }
 #result.hide {
 	opacity: 0;
