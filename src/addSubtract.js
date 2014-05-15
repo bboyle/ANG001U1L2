@@ -16,8 +16,8 @@ $(function() {
 
 		// get inputs
 		// note: yep, relying on HTML5 form validation to ensure these are integers
-		var x = parseInt( $( '#x' ).val(), 10 );
-		var y = parseInt( $( '#y' ).val(), 10 );
+		var x = document.getElementById( 'x' ).valueAsNumber;
+		var y = document.getElementById( 'y' ).valueAsNumber;
 
 		var z = button.value === 'plus' ? x + y : x - y;
 
